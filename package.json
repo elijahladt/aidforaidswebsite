@@ -1,0 +1,19 @@
+{
+  "name": "afan-disease-prevention-web",
+  "version": "1.0.0",
+  "description": "Disease Prevention Web Portal Supporting Aid for AIDS of Nevada (AFAN Las Vegas)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "public-health",
+    "disease-prevention",
+    "hiv-prevention",
+    "afan",
+    "las-vegas",
+    "nevada"
+  ],
+  "author": "Community Health Advocate",
+  "license": "MIT"
+}

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sources & Public Health Citations | AFAN Disease Prevention Hub</title>
+  <meta name="description" content="Verified scientific, clinical, and municipal public health sources for disease prevention, HIV transmission data, and Southern Nevada health statistics.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            afan: {
+              50: '#fff1f2',
+              100: '#ffe4e6',
+              500: '#f43f5e',
+              600: '#e11d48',
+              700: '#be123c',
+              800: '#9f1239',
+              900: '#881337',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-rose-500 selection:text-white">
+
+  <!-- TOP BAR -->
+  <div class="bg-gradient-to-r from-rose-900 via-rose-700 to-rose-900 text-white text-xs sm:text-sm py-2 px-4 shadow-sm">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="font-bold uppercase tracking-wider text-rose-200">Public Health Evidence:</span>
+        <span>Every recommendation is backed by peer-reviewed science & local Southern Nevada data.</span>
+      </div>
+      <a href="https://afanlv.org/" target="_blank" rel="noopener noreferrer" class="hidden md:inline-flex items-center bg-white/20 hover:bg-white/30 px-2.5 py-0.5 rounded text-xs font-semibold">
+        Support AFAN Las Vegas &rarr;
+      </a>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="sticky top-0 z-50 nav-glass">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <a href="index.html" class="flex items-center gap-3 group">
+          <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-rose-600 to-rose-500 flex items-center justify-center text-white shadow-md shadow-rose-600/30 group-hover:scale-105 transition">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C9.5 2 7.5 4 7.5 6.5C7.5 8.2 8.5 9.7 9.8 10.5L4.5 21C4.2 21.6 4.7 22.3 5.3 22.3H8.2L12 14.5L15.8 22.3H18.7C19.3 22.3 19.8 21.6 19.5 21L14.2 10.5C15.5 9.7 16.5 8.2 16.5 6.5C16.5 4 14.5 2 12 2ZM12 4.5C13.1 4.5 14 5.4 14 6.5C14 7.6 13.1 8.5 12 8.5C10.9 8.5 10 7.6 10 6.5C10 5.4 10.9 4.5 12 4.5Z"/></svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-extrabold text-lg sm:text-xl text-slate-900 tracking-tight">Prevention Hub</span>
+              <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-rose-100 text-rose-800">Las Vegas</span>
+            </div>
+            <p class="text-xs text-slate-500">Supporting <strong class="text-rose-700">Aid for AIDS of Nevada</strong> (AFAN)</p>
+          </div>
+        </a>
+
+        <nav class="hidden lg:flex items-center gap-6 text-sm font-medium text-slate-600">
+          <a href="index.html" class="nav-link hover:text-rose-600">Home</a>
+          <a href="prevention.html" class="nav-link hover:text-rose-600">Prevention Guide</a>
+          <a href="about-us.html" class="nav-link hover:text-rose-600">About Us</a>
+          <a href="about-me.html" class="nav-link hover:text-rose-600">About Me</a>
+          <a href="faq.html" class="nav-link hover:text-rose-600">FAQ</a>
+          <a href="sources.html" class="nav-link active">Sources</a>
+          <a href="support-afan.html" class="nav-link hover:text-rose-600 text-rose-700 font-semibold">Support AFAN</a>
+        </nav>
+
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="https://afanlv.org/" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-xl bg-rose-600 text-white font-semibold text-xs sm:text-sm hover:bg-rose-700 transition shadow-lg shadow-rose-600/25 flex items-center gap-2">
+            <i data-lucide="heart" class="w-4 h-4 fill-white"></i>
+            <span>Donate to AFAN</span>
+          </a>
+        </div>
+
+        <div class="flex lg:hidden">
+          <button id="mobile-menu-btn" type="button" class="p-2 rounded-xl text-slate-600 hover:text-slate-900 hover:bg-slate-100">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu" class="hidden lg:hidden border-b border-slate-200 bg-white px-4 pt-2 pb-6 space-y-2">
+      <a href="index.html" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-50">Home</a>
+      <a href="prevention.html" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-50">Prevention Guide</a>
+      <a href="about-us.html" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-50">About Us</a>
+      <a href="about-me.html" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-50">About Me</a>
+      <a href="faq.html" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-50">FAQ</a>
+      <a href="sources.html" class="block px-3 py-2 rounded-lg text-base font-semibold text-rose-600 bg-rose-50">Sources & Evidence</a>
+      <a href="support-afan.html" class="block px-3 py-2 rounded-lg text-base font-bold text-rose-700 hover:bg-rose-50">Support AFAN Las Vegas</a>
+      <div class="pt-4 border-t border-slate-100">
+        <a href="https://afanlv.org/" target="_blank" rel="noopener noreferrer" class="block w-full text-center py-3 rounded-xl bg-rose-600 text-white font-bold text-sm shadow-md">
+          Donate to AFAN Las Vegas
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="py-12 lg:py-20">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- HEADER -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-wider text-rose-600 bg-rose-50 px-3 py-1 rounded-full border border-rose-200">
+          Academic & Clinical Grounding
+        </span>
+        <h1 class="text-4xl sm:text-5xl font-extrabold text-slate-900 mt-3 tracking-tight">
+          Scientific Sources & Public Health Evidence
+        </h1>
+        <p class="text-lg text-slate-600 mt-4 leading-relaxed">
+          Public health initiatives are only as trustworthy as the evidence behind them. Below are the municipal, federal, global, and community sources informing our disease prevention guidelines and validating Aid for AIDS of Nevada's work.
+        </p>
+      </div>
+
+      <!-- SOURCES LIST -->
+      <div class="space-y-6">
+
+        <!-- 1. SNHD -->
+        <div class="bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-sm afan-card">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+            <span class="px-3 py-1 rounded-full text-xs font-bold bg-sky-100 text-sky-800">
+              Local Las Vegas Health Authority
+            </span>
+            <span class="text-xs text-slate-400">Clark County, NV &bull; 2024-2026</span>
+          </div>
+          <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-2">
+            Southern Nevada Health District (SNHD)
+          </h2>
+          <p class="text-sm font-semibold text-rose-600 mb-3">
+            Infectious Disease Surveillance, Sexual Health Clinic & Community Nursing Programs
+          </p>
+          <p class="text-sm text-slate-600 leading-relaxed mb-4">
+            SNHD is the accredited municipal public health agency for Clark County, NV. Their epidemiological surveillance reports track incidence rates of HIV, Syphilis, Hepatitis, respiratory syncytial virus (RSV), and Influenza in Southern Nevada. They establish local PrEP/PEP clinic standards and coordinate immunization services with community non-profits like AFAN.
+          </p>
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-700 mb-4">
+            <strong>Key takeaway utilized:</strong> Establishes Clark County STI testing frequency recommendations, emergency PEP clinical protocols, and local free clinic accessibility.
+          </div>
+          <div class="flex items-center justify-between pt-2 border-t border-slate-100">
+            <a href="https://www.southernnevadahealthdistrict.org/" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-slate-900 hover:text-rose-600 flex items-center gap-1.5">
+              <span>Visit SNHD Official Portal</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+            <a href="https://afanlv.org/" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-rose-600 hover:underline">
+              AFAN Partner Link &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- 2. AFAN -->
+        <div class="bg-white rounded-3xl border border-rose-200 ring-2 ring-rose-500/10 p-6 sm:p-8 shadow-md afan-card">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+            <span class="px-3 py-1 rounded-full text-xs font-bold bg-rose-600 text-white">
+              Featured Nevada Nonprofit Lead
+            </span>
+            <span class="text-xs text-rose-700 font-semibold">Founded 1984 &bull; Las Vegas, NV</span>
+          </div>
+          <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-2">
+            Aid for AIDS of Nevada (AFAN)
+          </h2>
+          <p class="text-sm font-semibold text-rose-600 mb-3">
+            Community HIV Care, Prevention Education, Ryan White Coordination & Client Support
+          </p>
+          <p class="text-sm text-slate-600 leading-relaxed mb-4">
+            Nevada's oldest and largest AIDS service organization. AFAN provides direct client case management, free testing navigation, nutritional pantry support, medical transportation, and emergency housing assistance. Serving over 1,200 individuals and families across Clark County annually, AFAN serves as the frontline community safety net against disease transmission and isolation.
+          </p>
+          <div class="p-4 rounded-xl bg-rose-50 border border-rose-200 text-xs text-rose-900 mb-4">
+            <strong>Key takeaway utilized:</strong> Provides direct program metrics, client service models (housing, food pantry, transit vouchers), Las Vegas headquarters details (1830 E. Sahara Ave.), and community event organizing (AIDS Walk Las Vegas).
+          </div>
+          <div class="flex items-center justify-between pt-2 border-t border-rose-100">
+            <a href="https://afanlv.org/" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-rose-700 hover:underline flex items-center gap-1.5">
+              <span>Visit afanlv.org Official Website</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+            <a href="https://afanlv.org/" target="_blank" rel="noopener noreferrer" class="px-4 py-1.5 rounded-lg bg-rose-600 text-white font-bold text-xs hover:bg-rose-700 transition">
+              Donate to AFAN
+            </a>
+          </div>
+        </div>
+
+        <!-- 3. CDC -->
+        <div class="bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-sm afan-card">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+            <span class="px-3 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800">
+              Federal Public Health Agency
+            </span>
+            <span class="text-xs text-slate-400">Atlanta, GA &bull; 2024</span>
+          </div>
+          <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-2">
+            Centers for Disease Control and Prevention (CDC)
+          </h2>
+          <p class="text-sm font-semibold text-rose-600 mb-3">
+            HIV PrEP & PEP Clinical Guidelines, Core Infection Prevention and Control Practices (IPC)
+          </p>
+          <p class="text-sm text-slate-600 leading-relaxed mb-4">
+            The national public health institute of the United States. Author of clinical provider guidance on Pre-Exposure Prophylaxis (PrEP), Post-Exposure Prophylaxis (PEP) within 72 hours, hand hygiene metrics (20-second minimum wash with friction), mask filtration benchmarks (N95/KN95), and food safety temperature standards.
+          </p>
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-700 mb-4">
+            <strong>Key takeaway utilized:</strong> Verified efficacy rates of PrEP (~99% reduction via sexual intercourse; 74% via IDU), the critical 72-hour window for PEP, and universal droplet/airborne precautions.
+          </div>
+          <div class="flex items-center justify-between pt-2 border-t border-slate-100">
+            <a href="https://www.cdc.gov/hiv/basics/prep.html" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-slate-900 hover:text-rose-600 flex items-center gap-1.5">
+              <span>View CDC PrEP Guidelines</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+            <a href="https://afanlv.org/" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-rose-600 hover:underline">
+              Support AFAN Navigation &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- 4. WHO -->
+        <div class="bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-sm afan-card">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+            <span class="px-3 py-1 rounded-full text-xs font-bold bg-blue-100 text-blue-800">
+              International Health Authority
+            </span>
+            <span class="text-xs text-slate-400">Geneva, Switzerland &bull; 2024</span>
+          </div>
+          <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-2">
+            World Health Organization (WHO)
+          </h2>
+          <p class="text-sm font-semibold text-rose-600 mb-3">
+            Global Health Sector Strategies on HIV, Viral Hepatitis and STIs & IPC Standards
+          </p>
+          <p class="text-sm text-slate-600 leading-relaxed mb-4">
+            Specialized agency of the United Nations responsible for international public health. Defines global harm reduction standards, sterile syringe programming, airborne versus contact pathogen transmission classification, and universal healthcare coverage guidelines for antiretroviral therapies.
+          </p>
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-700 mb-4">
+            <strong>Key takeaway utilized:</strong> Global infection prevention and control (IPC) frameworks and harm reduction syringe exchange protocols.
+          </div>
+          <div class="flex items-center justify-between pt-2 border-t border-slate-100">
+            <a href="https://www.who.int/health-topics/infection-prevention-and-control" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-slate-900 hover:text-rose-600 flex items-center gap-1.5">
+              <span>View WHO IPC Standards</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+            <a href="https://afanlv.org/" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-rose-600 hover:underline">
+              Support AFAN in Nevada &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- 5. NIH / NIAID -->
+        <div class="bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-sm afan-card">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+            <span class="px-3 py-1 rounded-full text-xs font-bold bg-purple-100 text-purple-800">
+              Biomedical Research Authority
+            </span>
+            <span class="text-xs text-slate-400">Bethesda, MD &bull; 2023-2025</span>
+          </div>
+          <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-2">
+            National Institutes of Health (NIH / NIAID)
+          </h2>
+          <p class="text-sm font-semibold text-rose-600 mb-3">
+            PARTNER 1, PARTNER 2 & HPTN 052 Landmark Clinical Trials (Undetectable = Untransmittable)
+          </p>
+          <p class="text-sm text-slate-600 leading-relaxed mb-4">
+            National Institute of Allergy and Infectious Diseases led and funded the landmark clinical trials verifying the scientific basis for U=U. By monitoring serodiscordant couples over tens of thousands of condomless acts, these studies proved zero documented cases of sexual HIV transmission when viral load is suppressed below 200 copies/mL.
+          </p>
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-700 mb-4">
+            <strong>Key takeaway utilized:</strong> Validates the biological and epidemiological certainty of U=U, dismantling fear and demonstrating the power of consistent medication adherence.
+          </div>
+          <div class="flex items-center justify-between pt-2 border-t border-slate-100">
+            <a href="https://www.niaid.nih.gov/diseases-conditions/treatment-prevention" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-slate-900 hover:text-rose-600 flex items-center gap-1.5">
+              <span>View NIH Clinical Science</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+            <a href="https://afanlv.org/" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-rose-600 hover:underline">
+              Support AFAN Case Managers &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- 6. END HIV NEVADA / DHHS -->
+        <div class="bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-sm afan-card">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+            <span class="px-3 py-1 rounded-full text-xs font-bold bg-amber-100 text-amber-800">
+              State Government Strategic Plan
+            </span>
+            <span class="text-xs text-slate-400">Carson City & Las Vegas &bull; 2024</span>
+          </div>
+          <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-2">
+            Nevada Department of Health and Human Services (DHHS)
+          </h2>
+          <p class="text-sm font-semibold text-rose-600 mb-3">
+            End HIV Nevada Strategic Plan & Fast-Track Cities Southern Nevada Consortium
+          </p>
+          <p class="text-sm text-slate-600 leading-relaxed mb-4">
+            State-level initiative coordinating Nevada's 95-95-95 targets (95% diagnosed, 95% on treatment, 95% virally suppressed). Manages federal Ryan White Part B allocations, state medication assistance programs, and public-private contracts with Aid for AIDS of Nevada.
+          </p>
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-700 mb-4">
+            <strong>Key takeaway utilized:</strong> Outlines state funding mechanisms and highlights AFAN as a key community subcontractor delivering Ryan White services in Clark County.
+          </div>
+          <div class="flex items-center justify-between pt-2 border-t border-slate-100">
+            <a href="https://endhivnevada.org/" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-slate-900 hover:text-rose-600 flex items-center gap-1.5">
+              <span>Explore End HIV Nevada</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+            <a href="https://afanlv.org/" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-rose-600 hover:underline">
+              Visit AFAN Las Vegas &rarr;
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- FOOTNOTE BOX -->
+      <div class="mt-12 p-8 rounded-3xl bg-slate-900 text-white flex flex-col md:flex-row items-center justify-between gap-6">
+        <div>
+          <h3 class="text-xl font-bold">Have an Update or Clinical Source Recommendation?</h3>
+          <p class="text-sm text-slate-300 mt-1 max-w-xl">
+            We continually update our disease prevention guidelines based on updated CDC and SNHD bulletins. To collaborate or support our community programs, connect with AFAN Las Vegas.
+          </p>
+        </div>
+        <a href="https://afanlv.org/" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl bg-rose-600 hover:bg-rose-700 text-white font-bold text-xs sm:text-sm shrink-0 shadow-md transition">
+          Support AFAN Las Vegas
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p>&copy; 2026 Disease Prevention & Community Health Initiative. Supporting Aid for AIDS of Nevada (AFAN).</p>
+      <div class="flex items-center gap-4 text-xs">
+        <a href="index.html" class="hover:text-white">Home</a>
+        <span>•</span>
+        <a href="prevention.html" class="hover:text-white">Prevention</a>
+        <span>•</span>
+        <a href="faq.html" class="hover:text-white">FAQ</a>
+        <span>•</span>
+        <a href="https://afanlv.org/" target="_blank" rel="noopener noreferrer" class="text-rose-400 font-semibold hover:underline">afanlv.org</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>

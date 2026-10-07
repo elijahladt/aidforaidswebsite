@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comprehensive Disease Prevention Guide | Supporting AFAN Las Vegas</title>
+  <meta name="description" content="Evidence-based protocols to prevent transmission of infectious diseases, bloodborne viruses (HIV/Hep C), respiratory pathogens, and bacterial infections in Nevada.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            afan: {
+              50: '#fff1f2',
+              100: '#ffe4e6',
+              500: '#f43f5e',
+              600: '#e11d48',
+              700: '#be123c',
+              800: '#9f1239',
+              900: '#881337',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-rose-500 selection:text-white">
+
+  <!-- TOP URGENT BAR -->
+  <div class="bg-gradient-to-r from-rose-900 via-rose-700 to-rose-900 text-white text-xs sm:text-sm py-2 px-4 shadow-sm no-print">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center justify-center w-2 h-2 rounded-full bg-red-400 animate-ping"></span>
+        <span class="font-bold uppercase tracking-wider text-rose-200">Emergency Protocol:</span>
+        <span>Need emergency PEP or HIV testing in Las Vegas? Call AFAN at <a href="tel:7023822326" class="underline font-bold">(702) 382-2326</a>.</span>
+      </div>
+      <a href="https://afanlv.org/" target="_blank" rel="noopener noreferrer" class="hidden md:inline-flex items-center bg-white/20 hover:bg-white/30 px-2.5 py-0.5 rounded text-xs font-semibold">
+        afanlv.org &rarr;
+      </a>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="sticky top-0 z-50 nav-glass no-print">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <a href="index.html" class="flex items-center gap-3 group">
+          <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-rose-600 to-rose-500 flex items-center justify-center text-white shadow-md shadow-rose-600/30 group-hover:scale-105 transition">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C9.5 2 7.5 4 7.5 6.5C7.5 8.2 8.5 9.7 9.8 10.5L4.5 21C4.2 21.6 4.7 22.3 5.3 22.3H8.2L12 14.5L15.8 22.3H18.7C19.3 22.3 19.8 21.6 19.5 21L14.2 10.5C15.5 9.7 16.5 8.2 16.5 6.5C16.5 4 14.5 2 12 2ZM12 4.5C13.1 4.5 14 5.4 14 6.5C14 7.6 13.1 8.5 12 8.5C10.9 8.5 10 7.6 10 6.5C10 5.4 10.9 4.5 12 4.5Z"/></svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-extrabold text-lg sm:text-xl text-slate-900 tracking-tight">Prevention Hub</span>
+              <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-rose-100 text-rose-800">Las Vegas</span>
+            </div>
+            <p class="text-xs text-slate-500">Supporting <strong class="text-rose-700">Aid for AIDS of Nevada</strong> (AFAN)</p>
+          </div>
+        </a>
+
+        <nav class="hidden lg:flex items-center gap-6 text-sm font-medium text-slate-600">
+          <a href="index.html" class="nav-link hover:text-rose-600">Home</a>
+          <a href="prevention.html" class="nav-link active">Prevention Guide</a>
+          <a href="about-us.html" class="nav-link hover:text-rose-600">About Us</a>
+          <a href="about-me.html" class="nav-link hover:text-rose-600">About Me</a>
+          <a href="faq.html" class="nav-link hover:text-rose-600">FAQ</a>
+          <a href="sources.html" class="nav-link hover:text-rose-600">Sources</a>
+          <a href="support-afan.html" class="nav-link hover:text-rose-600 text-rose-700 font-semibold">Support AFAN</a>
+        </nav>
+
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="https://afanlv.org/" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-xl bg-rose-600 text-white font-semibold text-xs sm:text-sm hover:bg-rose-700 transition shadow-lg shadow-rose-600/25 flex items-center gap-2">
+            <i data-lucide="heart" class="w-4 h-4 fill-white"></i>
+            <span>Donate to AFAN</span>
+          </a>
+        </div>
+
+        <div class="flex lg:hidden">
+          <button id="mobile-menu-btn" type="button" class="p-2 rounded-xl text-slate-600 hover:text-slate-900 hover:bg-slate-100">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu" class="hidden lg:hidden border-b border-slate-200 bg-white px-4 pt-2 pb-6 space-y-2">
+      <a href="index.html" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-50">Home</a>
+      <a href="prevention.html" class="block px-3 py-2 rounded-lg text-base font-semibold text-rose-600 bg-rose-50">Prevention Guide</a>
+      <a href="about-us.html" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-50">About Us</a>
+      <a href="about-me.html" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-50">About Me</a>
+      <a href="faq.html" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-50">FAQ</a>
+      <a href="sources.html" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-50">Sources & Evidence</a>
+      <a href="support-afan.html" class="block px-3 py-2 rounded-lg text-base font-bold text-rose-700 hover:bg-rose-50">Support AFAN Las Vegas</a>
+      <div class="pt-4 border-t border-slate-100">
+        <a href="https://afanlv.org/" target="_blank" rel="noopener noreferrer" class="block w-full text-center py-3 rounded-xl bg-rose-600 text-white font-bold text-sm shadow-md">
+          Donate to AFAN Las Vegas
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="py-12 lg:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- HEADER -->
+      <div class="max-w-3xl mb-12">
+        <span class="text-xs font-bold uppercase tracking-wider text-rose-600 bg-rose-50 px-3 py-1 rounded-full border border-rose-200">
+          Scientific Protocols & Guidelines
+        </span>
+        <h1 class="text-4xl sm:text-5xl font-extrabold text-slate-900 mt-3 tracking-tight">
+          The Complete Disease Prevention Guide
+        </h1>
+        <p class="text-lg text-slate-600 mt-4 leading-relaxed">
+          Disease prevention is built upon interrupting transmission pathways. By combining modern clinical interventions (like PrEP and ART) with behavioral hygiene and community harm reduction, we can halt infectious disease transmission across Las Vegas and Southern Nevada.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <button type="button" onclick="window.print()" class="px-4 py-2 rounded-xl bg-white border border-slate-300 text-slate-700 font-semibold text-xs hover:bg-slate-50 flex items-center gap-1.5 shadow-sm no-print">
+            <i data-lucide="printer" class="w-4 h-4 text-slate-500"></i>
+            <span>Print Patient / Community Guide</span>
+          </button>
+          <a href="https://afanlv.org/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl bg-rose-50 text-rose-700 border border-rose-200 font-semibold text-xs hover:bg-rose-100 flex items-center gap-1.5">
+            <i data-lucide="external-link" class="w-4 h-4"></i>
+            <span>AFAN Testing Navigation</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- TRANSMISSION PATHWAYS & PROTOCOLS -->
+      <div class="space-y-16">
+
+        <!-- 1. SEXUAL & BLOODBORNE -->
+        <section id="sexual-bloodborne" class="bg-white rounded-3xl border border-slate-200 p-8 sm:p-12 shadow-sm">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-14 h-14 rounded-2xl bg-rose-100 text-rose-600 flex items-center justify-center shrink-0">
+              <i data-lucide="shield" class="w-7 h-7"></i>
+            </div>
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-rose-600">Pillar 1 • High Priority</span>
+              <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Sexual & Bloodborne Pathogen Prevention</h2>
+              <p class="text-xs sm:text-sm text-slate-500">HIV, Hepatitis B, Hepatitis C, Syphilis, Gonorrhea, Chlamydia</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-slate-700">
+            <div class="space-y-6">
+              
+              <div class="p-5 rounded-2xl bg-rose-50/60 border border-rose-200">
+                <div class="flex items-center gap-2 text-rose-900 font-bold text-base mb-1">
+                  <i data-lucide="check-circle" class="w-5 h-5 text-rose-600"></i>
+                  <span>PrEP (Pre-Exposure Prophylaxis)</span>
+                </div>
+                <p class="text-sm text-slate-700 leading-relaxed">
+                  PrEP is a highly safe, FDA-approved biomedical prevention method. Taken as a daily pill (Truvada or Descovy) or received as a long-acting injection every 2 months (Apretude), PrEP reduces sexual transmission of HIV by approximately <strong>99%</strong> and injection drug use transmission by at least <strong>74%</strong>.
+                </p>
+                <div class="mt-3 text-xs text-rose-800 font-semibold">
+                  &bull; Need PrEP in Las Vegas? Aid for AIDS of Nevada (AFAN) coordinates navigation and co-pay relief!
+                </div>
+              </div>
+
+              <div class="p-5 rounded-2xl bg-amber-50/60 border border-amber-200">
+                <div class="flex items-center gap-2 text-amber-900 font-bold text-base mb-1">
+                  <i data-lucide="alert-triangle" class="w-5 h-5 text-amber-600"></i>
+                  <span>PEP (Post-Exposure Prophylaxis) — 72h Window</span>
+                </div>
+                <p class="text-sm text-slate-700 leading-relaxed">
+                  If you have had a possible exposure to HIV (unprotected sex, condom failure, or shared needle), you must start PEP strictly within <strong>72 hours</strong>. PEP consists of antiretroviral medications taken for 28 days that stop HIV from reproducing and establishing infection.
+                </p>
+                <div class="mt-3 text-xs text-amber-900 font-semibold">
+                  &bull; Head to an emergency room or call AFAN ((702) 382-2326) immediately for prompt linkage.
+                </div>
+              </div>
+
+              <div class="p-5 rounded-2xl bg-emerald-50/60 border border-emerald-200">
+                <div class="flex items-center gap-2 text-emerald-900 font-bold text-base mb-1">
+                  <i data-lucide="heart" class="w-5 h-5 text-emerald-600"></i>
+                  <span>U=U (Undetectable = Untransmittable)</span>
+                </div>
+                <p class="text-sm text-slate-700 leading-relaxed">
+                  Supported by the CDC, WHO, and NIH: A person living with HIV who takes antiretroviral therapy (ART) as prescribed and maintains an undetectable viral load (&lt;200 copies/mL) <strong>cannot transmit HIV to sexual partners</strong>. Adherence to treatment is prevention!
+                </p>
+              </div>
+
+            </div>
+
+            <div class="space-y-6">
+              
+              <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200">
+                <h4 class="font-bold text-slate-900 text-base mb-2">Barrier Protections & Safer Sex</h4>
+                <ul class="text-sm space-y-2 text-slate-600">
+                  <li class="flex items-start gap-2">
+                    <span class="text-rose-600 font-bold">&check;</span>
+                    <span><strong>External & Internal Condoms:</strong> Highly effective physical barrier blocking fluids and reducing STI transmission.</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-rose-600 font-bold">&check;</span>
+                    <span><strong>Water-based Lubricants:</strong> Prevent microscopic friction tears in mucous membranes during intimacy.</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-rose-600 font-bold">&check;</span>
+                    <span><strong>Routine STI Panels:</strong> Regular screening every 3 to 6 months catches asymptomatic chlamydia, syphilis, and gonorrhea.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200">
+                <h4 class="font-bold text-slate-900 text-base mb-2">Harm Reduction & Syringe Access in Clark County</h4>
+                <p class="text-sm text-slate-600 leading-relaxed mb-3">
+                  Sharing injection equipment or preparation items transmits bloodborne pathogens rapidly. Southern Nevada operates legal harm reduction exchanges:
+                </p>
+                <ul class="text-xs space-y-1.5 text-slate-600 mb-4">
+                  <li>&bull; <strong>Trac-B Exchange:</strong> 6114 W. Charleston Blvd, Las Vegas. Free sterile supplies.</li>
+                  <li>&bull; <strong>Syringe Vending Machines:</strong> Discreet, 24/7 access to clean kits and safe disposal boxes.</li>
+                  <li>&bull; <strong>Naloxone (Narcan):</strong> Always keep emergency overdose reversal kits on hand.</li>
+                </ul>
+                <a href="https://afanlv.org/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-bold text-rose-600 hover:underline">
+                  Support AFAN Harm Reduction & Education Programs &rarr;
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- 2. AIRBORNE & RESPIRATORY -->
+        <section id="respiratory-airborne" class="bg-white rounded-3xl border border-slate-200 p-8 sm:p-12 shadow-sm">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-14 h-14 rounded-2xl bg-sky-100 text-sky-600 flex items-center justify-center shrink-0">
+              <i data-lucide="wind" class="w-7 h-7"></i>
+            </div>
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-sky-600">Pillar 2</span>
+              <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Airborne & Respiratory Viral Protection</h2>
+              <p class="text-xs sm:text-sm text-slate-500">Influenza (Flu), SARS-CoV-2 (COVID-19), RSV, Tuberculosis</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
+              <h3 class="font-bold text-slate-900 text-base mb-2">1. High-Efficiency Masks</h3>
+              <p class="text-sm text-slate-600 leading-relaxed mb-3">
+                Cloth masks offer limited aerosol protection. Use certified <strong>N95, KN95, or KF94</strong> respirators that filter &ge;95% of airborne aerosols, especially during winter viral surges, transit, and healthcare clinics.
+              </p>
+              <span class="text-xs font-semibold text-sky-700 bg-sky-50 px-2 py-1 rounded">Source: CDC & NIOSH</span>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
+              <h3 class="font-bold text-slate-900 text-base mb-2">2. Indoor Air & Ventilation</h3>
+              <p class="text-sm text-slate-600 leading-relaxed mb-3">
+                Viral particles linger like smoke in closed rooms. Utilize HEPA air purifiers, maintain MERV-13 air filtration in HVAC systems, and maximize outdoor air exchange to reduce aerosol concentration.
+              </p>
+              <span class="text-xs font-semibold text-sky-700 bg-sky-50 px-2 py-1 rounded">Source: ASHRAE Standards</span>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
+              <h3 class="font-bold text-slate-900 text-base mb-2">3. Seasonal Immunization</h3>
+              <p class="text-sm text-slate-600 leading-relaxed mb-3">
+                Annual influenza shots and updated COVID-19 boosters drastically lower viral loads, hospitalization, and transmission rates to high-risk immunocompromised neighbors.
+              </p>
+              <span class="text-xs font-semibold text-sky-700 bg-sky-50 px-2 py-1 rounded">Source: SNHD Immunization</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- 3. SURFACE & HAND HYGIENE -->
+        <section id="hygiene-fomites" class="bg-white rounded-3xl border border-slate-200 p-8 sm:p-12 shadow-sm">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-14 h-14 rounded-2xl bg-amber-100 text-amber-600 flex items-center justify-center shrink-0">
+              <i data-lucide="sparkles" class="w-7 h-7"></i>
+            </div>
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-amber-600">Pillar 3</span>
+              <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Surface, Hand & Fomite Hygiene</h2>
+              <p class="text-xs sm:text-sm text-slate-500">Norovirus, MRSA, Clostridioides difficile, Enteroviruses</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="space-y-4 text-sm text-slate-600">
+              <p>
+                Contact transmission happens when infectious bodily fluids or bacteria transfer to hands, touch surfaces, and enter mucosal membranes (eyes, nose, mouth).
+              </p>
+              <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-2">
+                <h4 class="font-bold text-slate-900 text-sm">The 5 Steps to Effective Handwashing:</h4>
+                <ol class="list-decimal list-inside space-y-1 text-slate-700 text-xs sm:text-sm">
+                  <li><strong>Wet</strong> hands with clean, running water (warm or cold).</li>
+                  <li><strong>Apply soap</strong> and lather thoroughly.</li>
+                  <li><strong>Scrub for at least 20 seconds</strong>: palms, backs, between fingers, and under nails.</li>
+                  <li><strong>Rinse</strong> well under clean running water.</li>
+                  <li><strong>Dry</strong> using a clean towel or air dry.</li>
+                </ol>
+              </div>
+            </div>
+
+            <div class="space-y-4 text-sm text-slate-600">
+              <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200">
+                <h4 class="font-bold text-slate-900 mb-2">When Soap & Water Are Unavailable:</h4>
+                <p class="leading-relaxed mb-3">
+                  Use an alcohol-based hand sanitizer containing at least <strong>60% ethanol or isopropanol</strong>. Apply to all surfaces and rub vigorously until hands feel completely dry (~20 seconds).
+                </p>
+                <p class="text-xs text-amber-800 bg-amber-50 p-2.5 rounded-lg border border-amber-200">
+                  <em>Note:</em> Hand sanitizer does NOT kill Norovirus or C. diff. Always prefer soap and friction handwashing after using restrooms or caring for someone with stomach illness!
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 4. FOOD & WATERBORNE -->
+        <section id="food-water" class="bg-white rounded-3xl border border-slate-200 p-8 sm:p-12 shadow-sm">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-14 h-14 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0">
+              <i data-lucide="droplet" class="w-7 h-7"></i>
+            </div>
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-emerald-600">Pillar 4</span>
+              <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Food & Waterborne Pathogen Control</h2>
+              <p class="text-xs sm:text-sm text-slate-500">Salmonella, Campylobacter, E. coli, Hepatitis A</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200">
+              <span class="text-xs font-bold text-emerald-700 uppercase">Step 1</span>
+              <h4 class="font-bold text-slate-900 text-lg mt-1 mb-2">Clean</h4>
+              <p class="text-xs text-slate-600 leading-relaxed">Wash hands for 20 seconds, sanitize cutting boards, knives, and counters before and after raw poultry and meats.</p>
+            </div>
+
+            <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200">
+              <span class="text-xs font-bold text-emerald-700 uppercase">Step 2</span>
+              <h4 class="font-bold text-slate-900 text-lg mt-1 mb-2">Separate</h4>
+              <p class="text-xs text-slate-600 leading-relaxed">Never place cooked food on an unwashed plate that held raw meat. Keep raw juices segregated in the refrigerator.</p>
+            </div>
+
+            <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200">
+              <span class="text-xs font-bold text-emerald-700 uppercase">Step 3</span>
+              <h4 class="font-bold text-slate-900 text-lg mt-1 mb-2">Cook</h4>
+              <p class="text-xs text-slate-600 leading-relaxed">Cook poultry to 165&deg;F, ground beef to 160&deg;F, and pork/fish to 145&deg;F. Measure using an internal food thermometer.</p>
+            </div>
+
+            <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200">
+              <span class="text-xs font-bold text-emerald-700 uppercase">Step 4</span>
+              <h4 class="font-bold text-slate-900 text-lg mt-1 mb-2">Chill</h4>
+              <p class="text-xs text-slate-600 leading-relaxed">Refrigerate perishables below 40&deg;F within 2 hours. In hot Nevada summer heat (&gt;90&deg;F), refrigerate within 1 hour!</p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- SUPPORT AFAN ACTION PROMPT -->
+      <div class="mt-16 p-8 rounded-3xl bg-gradient-to-r from-rose-900 to-slate-900 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-rose-300">Community Safety Net</span>
+          <h3 class="text-2xl font-bold text-white mt-1">Want to Help Provide These Prevention Supplies in Las Vegas?</h3>
+          <p class="text-sm text-slate-300 mt-2 max-w-xl">
+            Aid for AIDS of Nevada distributes free barrier protections, rapid testing kits, and nutrition support across Clark County. Every donation makes an immediate impact.
+          </p>
+        </div>
+        <div class="flex flex-wrap items-center gap-3 shrink-0">
+          <a href="https://afanlv.org/" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl bg-rose-600 hover:bg-rose-700 text-white font-bold text-sm shadow-md transition">
+            Donate to AFAN Las Vegas &rarr;
+          </a>
+          <a href="support-afan.html" class="px-5 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-semibold text-sm border border-slate-700 transition">
+            AFAN Action Center
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800 text-sm no-print">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p>&copy; 2026 Disease Prevention & Community Health Initiative. Proudly supporting Aid for AIDS of Nevada (AFAN).</p>
+      <div class="flex items-center gap-4 text-xs">
+        <a href="index.html" class="hover:text-white">Home</a>
+        <span>•</span>
+        <a href="sources.html" class="hover:text-white">Sources</a>
+        <span>•</span>
+        <a href="https://afanlv.org/" target="_blank" rel="noopener noreferrer" class="text-rose-400 font-semibold hover:underline">afanlv.org</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>
