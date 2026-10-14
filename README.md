@@ -31,8 +31,8 @@ A modern, responsive public health web application dedicated to preventing the s
 4. **Dedicated Pages**:
    - **Home (`index.html`)**: Complete landing portal with stats, core pillars, AFAN spotlight, interactive quiz, clinic directory, and FAQ preview.
    - **Prevention Guide (`prevention.html`)**: In-depth clinical breakdown with printable view for community distribution.
-   - **About Us (`about-us.html`)**: Coalition mission, AFAN's 40-year legacy, and community health objectives.
-   - **About Me (`about-me.html`)**: Personal advocate bio (Zeke), public health mission, and personal pledge to support AFAN.
+   - **About Us (`about-us.html`)**: Aid for AIDS of Nevada (AFAN) 40-year history, mission, services, and impact.
+   - **About Me (`about-me.html`)**: Introduction to our community health group and advocacy pledge supporting AFAN.
    - **FAQ (`faq.html`)**: Searchable, filterable accordion with real-time keyword search.
    - **Sources & Evidence (`sources.html`)**: Formal citations, scopes, and key findings.
    - **Support AFAN (`support-afan.html`)**: Action center for donations, AIDS Walk Las Vegas, food drives, and volunteering.
@@ -66,8 +66,8 @@ Then visit: `http://localhost:8080` in your web browser.
 afan-disease-prevention-web/
 ├── index.html              # Main comprehensive portal & landing page
 ├── prevention.html         # Full disease prevention guide & protocols
-├── about-us.html           # Coalition story & AFAN 40-year history
-├── about-me.html           # Personal advocate narrative & pledge
+├── about-us.html           # Aid for AIDS of Nevada (AFAN) 40-year story
+├── about-me.html           # Community health advocate group intro
 ├── faq.html                # Searchable FAQ & myth-busting system
 ├── sources.html            # Formal scientific & municipal citations
 ├── support-afan.html       # Action & Giving Center for AFAN Las Vegas
